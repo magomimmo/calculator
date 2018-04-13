@@ -2,6 +2,9 @@ package com.sinapsi.calculator;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+/**
+* Just to get rid of static test code analysis
+*/
 public class CalculatorTest {
      private Calculator calculator = new Calculator();
 
