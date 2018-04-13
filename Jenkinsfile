@@ -25,5 +25,12 @@ pipeline {
                 sh "./gradlew jacocoTestCoverageVerification"
             }
         }
+    }
+    post {
+        failure {
+            slackSend channel: '@mimmo',
+            color: 'danger',
+            message: "The pipeline ${currentBuild.fullDisplayName} failed."
+        }
     }        
 }
