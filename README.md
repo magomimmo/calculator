@@ -1,2 +1,3 @@
 # calculator
-Testing CI/CD
+
+Testing CI/CD by using jenkins on a Spring Boot project
