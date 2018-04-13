@@ -11,5 +11,9 @@ pipeline {
                 sh "./gradlew test"
             }
         }
+        stage("Code coverage") {
+            sh "./gradlew jacocoTestReport"
+            sh "./gradlew jacocoTestCoverageVerification"
+        }
     }        
 }
